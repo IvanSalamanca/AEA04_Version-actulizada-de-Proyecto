@@ -38,11 +38,20 @@ router.get("/", (req, res) => {
     //res.json(data.notifications);
 });
 
+// Vista detallada de la notificació
 router.get("/:id", (req, res) => {
     const data = readData(filePathNotificaciones);
     const id = parseInt(req.params.id);
     const notificationes = data.notificacion.find((notification) => notification.id === id);
     res.render("notificationsDetall",{name,notificationes})
+});
+
+// Endpoint para editar la notificació
+router.get("/editar/:id", (req, res) => {
+    const data = readData(filePathNotificaciones);
+    const id = parseInt(req.params.id);
+    const notificationes = data.notificacion.find((notification) => notification.id === id);
+    res.render("notificationsEdit",{name,notificationes})
 });
 
 //Creem un endpoint del tipus post per afegir una notificació

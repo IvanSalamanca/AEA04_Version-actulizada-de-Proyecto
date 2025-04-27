@@ -19,6 +19,9 @@
                 <li class="recurs-item">
                     <strong><%= recurso.name %></strong>
                     <span>Categoria: <%= recurso.categoria %></span>
+                    <span><a href="/recursos/editar/<%=recurso.id%>">Editar</a></span>
+                    <!-- Por algun motivo que desconozco al clicar en el enlace da un error en esta pantalla 🤷‍♂️ -->
+                    <!-- Pero el endpoint de editar si lo escribes en la ruta del navegador funciona bien-->
                 </li>
             </ul>
         </section>

@@ -14,11 +14,12 @@
     </header>
     <main>
         <section>
-            <h2>Llista de Notificaciones</h2>
+            <h2>Notificacion</h2>
             <ul class="recurs-list">
                     <li class="recurs-item">
                         <strong>Inicio: <%= notificationes.dataIn %></strong>
                         <span>Final: <%= notificationes.dataFi %></span>
+                        <span><a href="/notifications/editar/<%=notificationes.id%>">Editar</a></span>
                     </li>
             </ul>
         </section>

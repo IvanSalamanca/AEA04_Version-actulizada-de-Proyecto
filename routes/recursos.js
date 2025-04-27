@@ -43,8 +43,16 @@ router.get("/:id", (req, res) => {
     const data = readData(filePathRecursos);
     const id = parseInt(req.params.id);
     const recurso = data.recursos.find((recurso) => recurso.idRecursos == id);
+    console.log(recurso);
     res.render("recursosDetall",{name,recurso })
     //recursosDetall
+});
+
+router.get("/editar/:id", (req, res) => {
+    const data = readData(filePathRecursos);
+    const id = parseInt(req.params.id);
+    const recurso = data.recursos.find((recurso) => recurso.idRecursos == id);
+    res.render("recursosEdit",{name,recurso })
 });
 
 //Creem un endpoint del tipus post per afegir un recurs

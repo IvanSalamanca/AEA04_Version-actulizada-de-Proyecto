@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Notificación</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Editar Notificación de <%= name %></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Edición</h2>
+            <form action="#" method="POST" class="edit-form">
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="true" <%= notificationes.estado ? "selected" : "" %>>Activo</option>
+                        <option value="false" <%= !notificationes.estado ? "selected" : "" %>>Inactivo</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="dataIn">Inicio:</label>
+                    <input type="text" id="dataIn" name="dataIn" value="<%= notificationes.dataIn %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="dataFi">Final:</label>
+                    <input type="text" id="dataFi" name="dataFi" value="<%= notificationes.dataFi %>">
+                </div>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

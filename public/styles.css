@@ -1,0 +1,84 @@
+/* Reset básico para que todo se vea igual en navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  padding: 20px;
+}
+
+/* Titulares */
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background: #ffffff;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+  background-color: #e8f0fe;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Clases específicas */
+.recurs-list {
+  margin-top: 10px;
+}
+
+.recurs-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Para el header */
+header {
+  margin-bottom: 30px;
+}
+
+/* Para el main */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Pequeño detalle extra */
+span {
+  color: #555;
+}

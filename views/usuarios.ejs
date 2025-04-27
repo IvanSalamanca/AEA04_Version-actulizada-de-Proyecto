@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuarios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestió de Usuaris per <%= name %></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Llista de Usuaris</h2>
+            <ul class="user-list">
+                <% data.usuarios.forEach(usuario => { %>
+                    <li class="user-item">
+                        <strong>Nom: <%= usuario.nombre %></strong>
+                        <span>Rol: <%= usuario.rol %></span>
+                        <span><a href="/usuarios/<%= usuario.id %>">Detall</a></span>
+                    </li>
+                <% }) %>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

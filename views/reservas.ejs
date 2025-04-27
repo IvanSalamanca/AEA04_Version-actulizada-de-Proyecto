@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestió de Reservas per <%= name %>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Llista de Reservas</h2>
+            <ul class="recurs-list">
+                <% data.Reservas.forEach(reserva=> { %>
+                    <li class="recurs-item">
+                        <strong>Persona <%= reserva.usuario %></strong>
+                        <span>Inicio: <%= reserva.dataIn %></span>
+                        <span>Final: <%= reserva.dataFi %></span>
+                        <span><a href="/reservas/<%=reserva.id%>">Detalle</a></span>
+                    </li>
+                    <% }) %>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

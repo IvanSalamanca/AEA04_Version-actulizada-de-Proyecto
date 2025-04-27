@@ -1,0 +1,46 @@
+{
+    "Reservas": [
+        {
+            "id": 1,
+            "estado": true,
+            "usuario": "Juan",
+            "dataIn": "2000",
+            "dataFi": "2006"
+        },
+        {
+            "id": 2,
+            "estado": true,
+            "usuario": "Maria",
+            "dataIn": "2017",
+            "dataFi": "2025"
+        },
+        {
+            "id": 3,
+            "estado": true,
+            "usuario": "Pedro",
+            "dataIn": "2000",
+            "dataFi": "2006"
+        },
+        {
+            "id": 4,
+            "estado": true,
+            "usuario": "Ana",
+            "dataIn": "2010",
+            "dataFi": "2015"
+        },
+        {
+            "id": 5,
+            "estado": true,
+            "usuario": "Luis",
+            "dataIn": "2020",
+            "dataFi": "2025"
+        },
+        {
+            "id": 6,
+            "estado": true,
+            "usuario": "Laura",
+            "dataIn": "1995",
+            "dataFi": "2006"
+        }
+    ]
+}

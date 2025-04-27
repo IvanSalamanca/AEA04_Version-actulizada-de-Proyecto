@@ -1,0 +1,14 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nombre": "Francesc Lara",
+            "rol": "MejorProfesor"
+        },
+        {
+            "id": 2,
+            "nombre": "Alicia Vazquez",
+            "rol": "MejorProfesora"
+        }
+    ]
+}

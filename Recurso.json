@@ -1,0 +1,42 @@
+{
+    "recursos":[
+        {
+            "idRecursos":1,
+            "name":"Sala de Reuniones",
+            "estado":true,
+            "categoria":"Salas"
+        },
+        { 
+            "idRecursos":2,
+            "name":"Vehiculo",
+            "estado" :true,
+            "categoria":"vehiculo"
+        },
+        { 
+            "idRecursos":3,
+            "name":"Cocina",
+            "estado" :true,
+            "categoria":"Salas"
+        },
+        { 
+            "idRecursos":4,
+            "name":"Sala de Juntas",
+            "estado" :true,
+            "categoria":"Salas"
+        },
+        { 
+            "idRecursos":5,
+            "name":"Sala de Estudio",
+            "estado" :true,
+            "categoria":"Salas"
+        },
+        { 
+            "idRecursos":6,
+            "name":"Sala de Conferencias",
+            "estado" :true,
+            "categoria":"Salas"
+        }
+    
+    ]
+
+}

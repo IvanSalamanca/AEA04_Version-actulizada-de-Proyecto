@@ -1,0 +1,28 @@
+lGET http://localhost:3000/recursos
+
+###
+
+GET http://localhost:3000/recursos/2
+
+###
+
+POST http://localhost:3000/recursos HTTP/1.1 
+Content-Type: application/json
+
+{
+    "idRecursos":2,
+    "name":"Vehiculo",
+     "estado" :true,
+    "categoria":"vehiculo"
+}
+
+###
+PUT http://localhost:3000/recursos/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Flota",
+  "year":1964
+}
+###
+DELETE http://localhost:3000/recursos/3 HTTP/1.1

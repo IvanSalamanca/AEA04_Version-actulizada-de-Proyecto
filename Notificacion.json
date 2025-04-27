@@ -1,0 +1,40 @@
+{
+    "notificacion": [
+        {
+            "id": 1,
+            "estado": true,
+            "dataIn": "2000",
+            "dataFi": "2006"
+        },
+        {
+            "id": 2,
+            "estado": true,
+            "dataIn": "2000",
+            "dataFi": "2006"
+        },
+        {
+            "id": 3,
+            "estado": true,
+            "dataIn": "2000",
+            "dataFi": "2006"
+        },
+        {
+            "id": 4,
+            "estado": true,
+            "dataIn": "2010",
+            "dataFi": "2015"
+        },
+        {
+            "id": 5,
+            "estado": true,
+            "dataIn": "2020",
+            "dataFi": "2025"
+        },
+        {
+            "id": 6,
+            "estado": true,
+            "dataIn": "1995",
+            "dataFi": "2006"
+        }
+    ]
+}

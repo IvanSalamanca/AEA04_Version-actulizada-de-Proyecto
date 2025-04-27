@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detall d'Usuari</title>
+</head>
+
+<body>
+    <header>
+        <h1>Detall d'Usuari per <%= name %></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Informació de l'Usuari</h2>
+            <ul class="user-detail">
+                <li><strong>ID:</strong> <%= usuario.id %></li>
+                <li><strong>Nom:</strong> <%= usuario.nombre %></li>
+                <li><strong>Rol:</strong> <%= usuario.rol %></li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

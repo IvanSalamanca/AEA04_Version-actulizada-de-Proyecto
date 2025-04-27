@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificaciones</title>
+</head>
+
+<body>
+    <header>
+        <h1>Gestió de Notificaciones per <%= name %>
+        </h1>
+    </header>
+    <main>
+        <section>
+            <h2>Llista de Notificaciones</h2>
+            <ul class="recurs-list">
+                <% data.notificacion.forEach(notificacion=> { %>
+                    <li class="recurs-item">
+                        <strong>Inicio: <%= notificacion.dataIn %></strong>
+                        <span>Final: <%= notificacion.dataFi %></span>
+                        <span><a href="/notifications/<%=notificacion.id%>">Detalle</a></span>
+                    </li>
+                    <% }) %>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

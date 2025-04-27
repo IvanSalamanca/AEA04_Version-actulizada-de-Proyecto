@@ -1,0 +1,32 @@
+GET http://localhost:3000/usuarios
+
+###
+
+GET http://localhost:3000/usuarios/2
+
+###
+
+POST http://localhost:3000/usuarios HTTP/1.1 
+Content-Type: application/json
+
+{
+    "idUsuario": 2,
+    "nombre": "Juan Perez",
+    "email": "juan.perez@example.com",
+    "telefono": "123456789"
+}
+
+###
+
+PUT http://localhost:3000/usuarios/3 HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "Maria Lopez",
+  "email": "maria.lopez@example.com",
+  "telefono": "987654321"
+}
+
+###
+
+DELETE http://localhost:3000/usuarios/3 HTTP/1.1

@@ -42,6 +42,14 @@ router.get("/:id", (req, res) => {
     // res.json(usuario);
 });
 
+router.get("/editar/:id", (req, res) => {
+    const data = readData(filePathUsuarios);
+    const id = parseInt(req.params.id);
+    const usuario = data.usuarios.find((usuario) => usuario.id === id);
+    res.render("usuarioEdit", { name, usuario });
+    // res.json(usuario);
+});
+
 // Crear nuevo usuario
 router.post("/", (req, res) => {
     const data = readData(filePathUsuarios);

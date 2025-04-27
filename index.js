@@ -12,14 +12,7 @@ import reservasRouter from "./routes/reservas.js";
 import userRouter from "./routes/usuarios.js";
 
 
-
-// Separar Los db.json en varios ficheros y crear 4 readData y writeData para cada uno
-
-// Crear .ejs para cada pagina 
-
 const name = "Iván";
-
-
 
 const app = express();
 app.use(bodyParser.json());

@@ -3,12 +3,27 @@
         {
             "id": 1,
             "nombre": "Francesc Lara",
-            "rol": "MejorProfesor"
+            "rol": "Profesor M09"
         },
         {
             "id": 2,
             "nombre": "Alicia Vazquez",
-            "rol": "MejorProfesora"
+            "rol": "Profesora M09"
+        },
+        {
+            "id": 3,
+            "nombre": "Torres Garcia",
+            "rol": "Jefe de cocina"
+        },
+        {
+            "id": 4,
+            "nombre": "Maria Garcia",
+            "rol": "Dictadora"
+        },
+        {
+            "id": 5,
+            "nombre": "Jhon Doe",
+            "rol": "Asesino en serie"
         }
     ]
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Reserva</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Editar Reserva de <%= name %></h1>
+    </header>
+    <main>
+        <section>
+            <h2>Formulario de Edición</h2>
+            <form action="#" method="POST" class="edit-form">
+                <div class="form-group">
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" value="<%= reserva.usuario %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="dataIn">Fecha de Inicio:</label>
+                    <input type="text" id="dataIn" name="dataIn" value="<%= reserva.dataIn %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="dataFi">Fecha Final:</label>
+                    <input type="text" id="dataFi" name="dataFi" value="<%= reserva.dataFi %>">
+                </div>
+
+                <div class="form-group">
+                    <label for="estado">Estado:</label>
+                    <select id="estado" name="estado">
+                        <option value="true" <%= reserva.estado ? "selected" : "" %>>Activo</option>
+                        <option value="false" <%= !reserva.estado ? "selected" : "" %>>Inactivo</option>
+                    </select>
+                </div>
+
+                <button type="submit">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

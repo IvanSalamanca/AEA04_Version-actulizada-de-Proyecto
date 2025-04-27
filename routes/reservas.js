@@ -39,6 +39,14 @@ router.get("/:id", (req, res) => {
     //res.json(reserva);
 });
 
+router.get("/editar/:id", (req, res) => {
+    const data = readData(filePathReservas);
+    const id = parseInt(req.params.id);
+    const reserva = data.Reservas.find((reserva) => reserva.id === id);
+    res.render("reservaEdit",{name, reserva})
+    //res.json(reserva);
+});
+
 //Creem un endpoint del tipus post per afegir una reserva
 router.post("/", (req, res) => {
     const data = readData(filePathReservas);
